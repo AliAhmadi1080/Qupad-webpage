@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>راهنمای جامع پهبادها | طراحی و کنترل</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- آیکون‌های Heroicons -->
+    <script src="https://unpkg.com/@heroicons/v2.0.18/24/outline/index.js"></script>
+  </head>
+  <body class="bg-gray-50 font-vazir">
+    <!-- هدر با تصویر پس‌زمینه -->
+    <header class="bg-blue-900 text-white py-16 relative">
+      <div class="absolute inset-0 bg-black/50"></div>
+      <div class="container mx-auto px-4 relative text-center">
+        <h1 class="text-4xl font-bold mb-4">پهبادها: از طراحی تا پرواز</h1>
+        <p class="text-lg text-gray-200">راهنمای جامع فنی و عملیاتی</p>
+      </div>
+    </header>
+
+    <!-- بخش محتوای اصلی -->
+    <main class="container mx-auto px-4 py-8">
+      <!-- کارت‌های اطلاعات کلی -->
+      <div class="grid md:grid-cols-2 gap-6 mb-12">
+        <!-- کارت انواع پهبادها -->
+        <div class="bg-white p-6 rounded-xl shadow-lg border border-blue-100">
+          <div class="flex items-center mb-4">
+            <svg
+              class="w-8 h-8 text-blue-600 mr-2"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
+              />
+            </svg>
+            <h2 class="text-xl font-bold">انواع پهبادها</h2>
+          </div>
+          <ul class="list-disc pr-4 space-y-2 text-gray-700">
+            <li>پهبادهای بالثابت (نیازمند باند)</li>
+            <li>پهبادهای VTOL (برخاست عمودی)</li>
+            <li>پهبادهای بالگردی (هلیکوپتری)</li>
+            <li>پهبادهای رومیزی (کوچک مقیاس)</li>
+          </ul>
+        </div>
+
+        <!-- کارت اجزای حیاتی -->
+        <div class="bg-white p-6 rounded-xl shadow-lg border border-blue-100">
+          <div class="flex items-center mb-4">
+            <svg
+              class="w-8 h-8 text-blue-600 mr-2"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+            <h2 class="text-xl font-bold">اجزای حیاتی</h2>
+          </div>
+          <div class="grid grid-cols-2 gap-4 text-gray-700">
+            <div class="flex items-center">
+              <span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+              موتورهای براشلس
+            </div>
+            <div class="flex items-center">
+              <span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+              باتری Li-Po
+            </div>
+            <div class="flex items-center">
+              <span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+              کنترلر پرواز
+            </div>
+            <div class="flex items-center">
+              <span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+              سیستم ناوبری
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- بخش سیستم‌های کنترل -->
+      <section class="bg-white rounded-xl shadow-lg p-6 mb-8">
+        <h2
+          class="text-2xl font-bold text-blue-900 mb-6 border-r-4 border-blue-500 pr-3"
+        >
+          سیستم‌های کنترل پرواز
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- زوایای حرکتی -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4 flex items-center">
+              <svg
+                class="w-6 h-6 text-blue-600 mr-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 10V3L4 14h7v7l9-11h-7z"
+                />
+              </svg>
+              زوایای حرکتی
+            </h3>
+            <div class="space-y-3">
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h4 class="font-medium text-blue-800">رول (Roll)</h4>
+                <p class="text-sm text-gray-600">
+                  چرخش حول محور طولی (انحراف به چپ/راست)
+                </p>
+              </div>
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h4 class="font-medium text-blue-800">پیچ (Pitch)</h4>
+                <p class="text-sm text-gray-600">
+                  چرخش حول محور عرضی (حرکت به جلو/عقب)
+                </p>
+              </div>
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h4 class="font-medium text-blue-800">یاو (Yaw)</h4>
+                <p class="text-sm text-gray-600">
+                  چرخش حول محور عمودی (تغییر جهت)
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- پروتکل‌های ایمنی -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4 flex items-center">
+              <svg
+                class="w-6 h-6 text-red-600 mr-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
+                />
+              </svg>
+              پروتکل‌های ایمنی
+            </h3>
+            <ul class="list-disc pr-4 space-y-3 text-gray-700">
+              <li>بررسی ولتاژ باتری قبل از پرواز</li>
+              <li>کالیبراسیون سنسورهای IMU</li>
+              <li>محدوده دمای عملیاتی: ۰°C تا ۴۰°C</li>
+              <li>فاصله ایمن از موانع (حداقل ۵ متر)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- جدول مشخصات باتری -->
+      <section class="bg-white rounded-xl shadow-lg p-6">
+        <h2
+          class="text-2xl font-bold text-blue-900 mb-6 border-r-4 border-blue-500 pr-3"
+        >
+          مشخصات باتری Li-Po
+        </h2>
+        <div class="overflow-x-auto">
+          <table class="w-full text-right">
+            <thead class="bg-blue-50">
+              <tr>
+                <th class="p-3 text-sm font-semibold">سلول</th>
+                <th class="p-3 text-sm font-semibold">ولتاژ اسمی</th>
+                <th class="p-3 text-sm font-semibold">حداکثر جریان</th>
+                <th class="p-3 text-sm font-semibold">ظرفیت معمول</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b">
+                <td class="p-3">1S</td>
+                <td class="p-3">3.7V</td>
+                <td class="p-3">10-20C</td>
+                <td class="p-3">150-300mAh</td>
+              </tr>
+              <tr class="border-b">
+                <td class="p-3">2S</td>
+                <td class="p-3">7.4V</td>
+                <td class="p-3">15-30C</td>
+                <td class="p-3">500-1000mAh</td>
+              </tr>
+              <tr>
+                <td class="p-3">3S</td>
+                <td class="p-3">11.1V</td>
+                <td class="p-3">20-50C</td>
+                <td class="p-3">1300-3000mAh</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <!-- فوتر -->
+    <footer class="bg-blue-900 text-white mt-12 py-6">
+      <div class="container mx-auto px-4 text-center">
+        <p class="text-sm opacity-75">
+          © 2023 تمامی حقوق برای آموزش پهبادها محفوظ است
+        </p>
+        <div class="mt-2 flex justify-center space-x-4">
+          <a href="#" class="hover:text-blue-300 transition">قوانین استفاده</a>
+          <a href="#" class="hover:text-blue-300 transition">تماس با ما</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
